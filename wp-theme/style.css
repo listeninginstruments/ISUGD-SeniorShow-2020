@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url("https://use.typekit.net/cfl2sht.css");
+
+
+
+html{
+
+	/*background: url(images/AlexBraidwood-Badlands-crop.jpg) no-repeat center center fixed; */
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+
+
+}
+
+div {
+	box-sizing: border-box;
+	-webkit-transition: all .5s; /* Safari */
+    transition: all .5s;
+}
+
+body{
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+	margin:0;
+	color: #666;
+}
+
+strong, b {
+	font-weight: 700;
+}
+
+
+h1 {
+	font-size: 1.5em;
+	color:#ff014a;
+	background-color: #ffff01;
+	padding-left:10px;
+}
+h2 {
+	font-size: 1.5em;
+	color:#ff014a;
+}
+h3 {
+	font-size: 1.5em;
+	color:#07fdb4;
+}
+h4 {
+	font-size: 1.5em;
+}
+li{
+	line-height: 150%;
+}
+
+p {
+	font-weight: 200;
+	font-size: 1.25em;
+	line-height: 150%;
+}
+
+a{
+	text-decoration: none;
+}
+
+div #container{
+	position: absolute;
+	top:0vw;
+	left:10vw;
+	width:80vw;
+	/*background-color: #f90;*/
+}
+
+/* -------------------------------------------------------------------------------------| HEADER */
+div #header {
+	position:fixed;
+	z-index:999;
+	left:10vw;
+	width:80vw;
+	height:15vw;
+	background-color: #ff014a;
+
+	font-family: fresno, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+	text-align: center;
+
+}
+
+div #site_title{
+	height:8vw;
+	width:100%;
+	font-size: 8vw;
+	letter-spacing: 1px;
+	
+	background-color: #ff014a;
+	
+}
+
+div #site_title a, div #site_title_sub a {
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+div #site_title_sub {
+	height:3vw;
+	width:100%;
+	letter-spacing: 4px;
+
+	font-size: 2vw;
+	
+	
+	background-color: #ff014a;
+}
+
+div #header_nav {
+	height:4vw;
+	width:100%;
+	background-color: #07fdb4;
+}
+
+div.nav_cat{
+	position: relative;
+	float:left;
+	width:16vw;
+	height:2vw;
+	padding-top:3px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: .75em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+div #header_nav a{
+	color:#000;
+}
+
+div #header_nav a:hover div.nav_cat{
+	color:#ff014a;
+	background-color: #ffff01;
+}
+
+
+/* -------------------------------------------------------------------------------------|  PAGE.php */
+
+#page_content {
+	position:relative;
+	float: left;
+	width: 80vw;
+	height:auto;
+	/*background-color: #0f0;*/
+	padding:2vw;
+}
+
+#page_content img {
+	width:100%;
+	height:auto;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------| HOME PAGE */
+
+div #main_container{
+	position:absolute;
+	left:10vw;
+	top:15vw;
+
+	width:80vw;
+	height:auto;
+	margin: 0 auto;
+	/*overflow: auto;*/
+	background-color: #FFFFFF;
+}
+
+div .project_grid {
+	position: relative;
+	float:left;
+	width:16vw; /*(80/5)*/
+	height:16vw;
+	background-size: 100% auto;
+	border:2px solid #FFF;
+	overflow:hidden;
+}
+
+a.project_grid_link > .project_grid > .project_grid_content{
+	position:absolute;
+	left:2vw;
+	top:-20vw;
+	opacity: 0;
+}
+
+a.project_grid_link > .project_grid > .project_grid_content > .project_grid_name{
+	position:absolute;
+	left:-16vw;
+}
+
+a.project_grid_link:hover > .project_grid > .project_grid_content{
+	left:2vw;
+	top:2vw;
+	opacity: 1;
+}
+
+a.project_grid_link:hover > .project_grid > .project_grid_content > .project_grid_name{
+	left:0vw;
+}
+
+
+
+
+div .project_grid_title, div .project_grid_name{
+	width:12vw;
+	color:#07fdb4;
+	background-color: #ffff01;
+	padding:8px;
+
+}
+
+div .project_grid_title {
+	font-weight: 700;
+	font-size:1.25em;
+	margin-bottom: 8px
+}
+
+div .project_grid_name {
+	font-weight: 400;
+	font-size:1em;
+}
+
+
+/* -------------------------------------------------------------------------------------| Footer */
+div #footer{
+	position:relative;
+	width:80vw;
+	height:auto;
+}
+
+/* -------------------------------------------------------------------------------------| PROJECT PAGE */
+
+#project_container {
+	position:absolute;
+	left:10vw;
+	top:15vw;
+
+	width:80vw;
+	height:auto;
+	padding: 2vw 2.5vw;
+	margin: 0 auto;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+#project_container a{
+	font-weight: 600;
+	color: #ff014a;
+	padding:0 2px;
+	text-decoration: none;
+}
+
+#project_container a:hover{
+	color: #FFF;
+	background-color: #ff014a;
+	text-decoration: none;
+}
+
+#project_title {
+	font-weight: 900;
+	font-size: 5vw;
+	text-transform: uppercase;
+	font-style: oblique;
+	letter-spacing: 1px;
+	line-height: 95%;
+	color:#000;
+}
+
+#project_byline, #project_description {
+	font-weight: 200;
+	font-size: 2vw;
+	
+}
+#project_description{
+	margin-bottom: 20px;
+}
+
+#project_hero img {
+	width:100%;
+}
+
+
+#student_info {
+	position:relative;
+	float: left;
+	width:20vw;
+	height:auto;
+	background-color: #ffff01;
+	padding:2vw;
+}
+
+.student_info_field {
+	width:16vw;
+	height:auto;
+	margin-bottom: 1vw;
+}
+
+.student_info_field a {
+	font-weight: 600;
+	color:#ff014a;
+	text-decoration: none;
+	border-bottom: 4px dashed #07fdb4;
+}
+
+.student_info_field a:hover {
+	border-bottom: 4px solid #07fdb4;
+}
+
+
+#project_content {
+	position:relative;
+	float: left;
+	width:55vw;
+	height:auto;
+	/*background-color: #0f0;*/
+	padding:2vw;
+}
+
+#project_content img{
+	width:100%;
+	height: auto;
+}
+
+#project_content div.wp-caption{
+	width:100% !important;
+	font-size: .55em;
+	font-style: oblique;
+	color:#999;
+	letter-spacing: 1px;
+}
+
+#project_content div.wp-caption img{
+	width:100%;
+	height: auto;
+}
+
+
+
+#project_content div.wp-caption.alignleft{
+	width:50% !important;
+	height:auto;
+	float: left;
+	margin-right: 20px;
+}
+
+img.alignleft{
+	width:50% !important;
+	height:auto;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+#project_content div.wp-caption.alignright{
+	width:50% !important;
+	height:auto;
+	float: right;
+	margin-left: 20px;
+}
+
+img.alignright{
+	width:50% !important;
+	height:auto;
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+
+
+/* -------------------------------------------------------------------------------------| CATEGORY PAGE */
+div .category_title {
+	padding:20px;
+	color:#07fdb4;
+	margin: 0 auto 1vw auto;
+	text-align: left;
+	border-bottom: 4px dotted #ffff01;
+}
+
+
+div .category_title_label{
+	font-family: fresno, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3vw;
+	letter-spacing: 2px;
+}
+
+
+
+/* -------------------------------------------------------------------------------------| Webinar PAGE */
+table #webinar_schedule{
+	font-family: 'Source Sans Pro', sans-serif;
+	width:80vw;
+}
+
+td {
+	vertical-align: top;
+	letter-spacing: 1px;
+	line-height: 145%;
+}
+
+td {
+	border-top: 1px dashed #999; 
+	padding: 1vw;
+	font-size: 1em;
+}
+
+/* day */
+tr.xl68 {
+	background-color: #ff014a;
+	font-weight:700;
+	font-size: 1.5em;
+	color:#07fdb4;
+}
+
+/* panel-row */
+tr.xl70 {
+	background-color: #07fdb4;
+}
+
+/* panel title */
+
+td.xl69 {
+	font-weight:700;
+	font-size: 1.5em;
+	color:#ff014a;
+}
+
+td.xl65 {
+	font-weight: 700;
+}
+
+#tbl_col_1{
+	width: 5vw;
+}
+
+
+#tbl_col_2{
+	width: 5vw;
+}
+
+#tbl_col_3{
+	width: 70vw;
+}
+
+
+
+
+
