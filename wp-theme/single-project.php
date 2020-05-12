@@ -35,7 +35,7 @@
 
                     <div id="student_info">
                         <div class="student_info_field">by <strong><?php the_field('student_name'); ?></strong></div>
-                        <div class="student_info_field"><a href="<?php the_field('portfolio_website_link'); ?>">Portfolio Website</a></div>
+                        <div class="student_info_field"><a href="<?php the_field('portfolio_website_link'); ?>" target="_blank">Portfolio Website</a></div>
 
                         <?php if (get_field('email_address') != null): ?> 
                             <div class="student_info_field"><a href="mailto:<?php echo get_field('email_address'); ?>">Contact by Email</a></div>
@@ -43,11 +43,11 @@
 
                         
                         <?php if (get_field('instagram_handle') != null): ?> 
-                            <div class="student_info_field">Instagram:<br><a href="https://www.instagram.com/listeninginstruments/<?php echo get_field('instagram_handle'); ?>">@<?php echo get_field('instagram_handle'); ?></a></div>
+                            <div class="student_info_field">Instagram:<br><a href="https://www.instagram.com/<?php echo get_field('instagram_handle'); ?>" target="_blank">@<?php echo get_field('instagram_handle'); ?></a></div>
                         <?php endif; ?>
 
                         <?php if (get_field('twitter_handle')): ?> 
-                            <div class="student_info_field">Twitter:<br><a href="https://twitter.com/<?php echo get_field('twitter_handle'); ?>">@<?php echo get_field('twitter_handle'); ?></a></div>
+                            <div class="student_info_field">Twitter:<br><a href="https://twitter.com/<?php echo get_field('twitter_handle'); ?>" target="_blank">@<?php echo get_field('twitter_handle'); ?></a></div>
                         <?php endif; ?>
                         <br><br>
                         <strong><u>Filed Under:</u></strong><br>

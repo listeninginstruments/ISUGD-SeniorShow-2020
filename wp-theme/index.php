@@ -11,10 +11,14 @@
 		
 		<h2>All Capstone Projects</h2>
 
+
+		
 					<?php 
 					/* =======================
 					PROJECTS
 					==========================*/
+
+					
 					$bg_coin = true;
 					$args = array( 'post_type' => 'project', 'posts_per_page' => 100 );
 					$loop = new WP_Query( $args );
@@ -35,7 +39,7 @@
 									<div class="project_grid_content">
 										<div class="project_grid_title"><?php the_title(); ?></div>
 										<div class="project_grid_name">By <?php the_field('student_name'); ?></div>		
-									</div><!-- project_grid_content -->	
+									</div>
 								</div>
 							</a>
 
@@ -47,8 +51,9 @@
 							endwhile;
 							//} // end while
 						endif;//} // end if
+						
 					?>
-
+		
 		
 	</div> <!-- main_grid -->
 

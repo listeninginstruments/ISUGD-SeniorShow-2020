@@ -18,6 +18,8 @@
 
 
 	<link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" media="screen and (min-width: 1500px)" href="<?php echo get_template_directory_uri(); ?>/widescreen.css">
+
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 	<script>

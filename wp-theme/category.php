@@ -16,13 +16,15 @@
 		</div>
 			
 			
-
+			
 
 
 					<?php 
 					/* =======================
 					PROJECTS
 					==========================*/
+
+					
 					$args = array( 'post_type' => 'project', 'cat'=> $category->term_id,'posts_per_page' => 100 );
 					$loop = new WP_Query( $args );
 						if ( $loop->have_posts() ) :
@@ -34,7 +36,7 @@
 							<?php 
 	                            $img_bg_array = get_field('branding_tile_b_w');
 	                            $img_bg = $img_bg_array["sizes"]["medium"];
-	                            //print_r($img_bg)
+	                          
 	                         ?>
 
 							<a class="project_grid_link" href="<?php echo get_permalink(); ?>">
@@ -56,8 +58,9 @@
 							endwhile;
 							//} // end while
 						endif;//} // end if
+						
 					?>
-
+			
 		
 	</div> <!-- main_grid -->
 
