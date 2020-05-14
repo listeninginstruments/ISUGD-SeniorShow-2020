@@ -17,7 +17,7 @@ html{
 div {
 	box-sizing: border-box;
 	-webkit-transition: all .5s; /* Safari */
-    transition: all .5s;
+    transition: all .25s;
 }
 
 body{
@@ -62,13 +62,15 @@ p {
 
 a{
 	text-decoration: none;
+	color: #ff014a;
+	font-weight: 700;
 }
 
 div #container{
 	position: absolute;
 	top:0vw;
-	left:10vw;
-	width:80vw;
+	left:0vw;
+	width:100vw;
 	/*background-color: #f90;*/
 }
 
@@ -76,14 +78,14 @@ div #container{
 .epyt-video-wrapper{
 	position: relative;
 	float: left;
-	width:35vw;
-	height:19.6vw;
+	width:28vw;
+	height:15.7vw; /* 1.785714285714286 */
 	margin: 1vw;
 }
 
 .epyt-video-wrapper iframe{
-	width:35vw;
-	height:19.6vw;	
+	width:28vw;
+	height:15.7vw; /* 1.785714285714286 */
 	border:none;
 }
 
@@ -91,9 +93,9 @@ div #container{
 div #header {
 	position:fixed;
 	z-index:999;
-	left:10vw;
-	width:80vw;
-	height:17vw; /* ---- ADJUST #main_container ---*/
+	left:0vw;
+	width:100vw;
+	height:9vw; /* ---- ADJUST #main_container too ---*/
 	background-color: #ff014a;
 
 	font-family: fresno, sans-serif;
@@ -104,12 +106,44 @@ div #header {
 
 }
 
+div .header_link{
+	position:relative;
+	float:left;
+	width:20vw;
+	height: 9vw;
+
+	color:#fff;
+	font-size:2em;
+	letter-spacing: 3px;
+}
+
+div	.header_link_txt {
+	padding-top:5.25vw;
+
+}
+
+div #site_logo {
+	padding: 20px;
+}
+
+div #site_logo img{
+	width:100%;
+	height:auto;
+}
+
+a:hover .header_link_txt{
+	background-color: #000;
+	/*color: #ff014a;*/
+	background-image: url('imgs/diag_w2.png');
+}
+
+
+
+/* delete
 div #site_title{
 	height:8vw;
-	width:100%;
-	font-size: 8vw;
+	font-size: 7vw;
 	letter-spacing: 1px;
-	
 	background-color: #ff014a;
 	
 }
@@ -121,41 +155,49 @@ div #site_title a, div #site_title_sub a {
 
 div #site_title_sub {
 	height:3vw;
-	width:100%;
+	width:20vw;
 	letter-spacing: 4px;
 
-	font-size: 2vw;
+	font-size: 1.75vw;
 	
 	
 	background-color: #ff014a;
 }
+*/
 
-div #header_nav {
-	height:auto;/*9vw*/
+div #topics_nav {
+	height:0vw;/*12vw*/
 	width:100%;
 	background-color: #07fdb4;
 	overflow: hidden;
 	background-image: url('imgs/diag_w2-flip.png');
 }
 
+.topic_nav_close {
+	height:0vw;
+}
+.topic_nav_open {
+	height:12vw;
+}
+
 div.nav_cat{
 	position: relative;
 	float:left;
-	width:16vw;
-	height:2vw;
-	padding-top:4px;
+	width:20vw;
+	height:4vw;
+	padding-top:.75vw;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 700;
-	font-size: .75em;
+	font-size: 1.5em;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
 
-div #header_nav a{
+div #topics_nav a{
 	color:#000;
 }
 
-div #header_nav a:hover div.nav_cat{
+div #topics_nav a:hover div.nav_cat{
 	color:#ff014a;
 	background-color: #ffff01;
 	background-image: url('imgs/diag_w2.png');
@@ -167,10 +209,10 @@ div #header_nav a:hover div.nav_cat{
 #page_content {
 	position:relative;
 	float: left;
-	width: 80vw;
+	width: 96vw;
 	height:auto;
 	/*background-color: #0f0;*/
-	padding:2vw;
+	padding:0vw 2vw 0vw 2vw;
 }
 
 #page_content img {
@@ -199,10 +241,10 @@ a.link-hero:hover{
 
 div #main_container{
 	position:absolute;
-	left:10vw;
-	top:18vw;
+	left:0vw;
+	top:9vw;					/* -------------------------------------------------------------------------------------| Change when opening nav | */
 
-	width:80vw;
+	width:100vw;
 	height:auto;
 	margin: 0 auto;
 	/*overflow: auto;*/
@@ -212,9 +254,10 @@ div #main_container{
 div .project_grid {
 	position: relative;
 	float:left;
-	width:16vw; /*(80/5)*/
-	height:16vw;
+	width:20vw; /*(80/5)*/
+	height:20vw;
 	background-size: 100% auto;
+	background-position: center;
 	border:2px solid #FFF;
 	overflow:hidden;
 }
@@ -222,13 +265,19 @@ div .project_grid {
 a.project_grid_link > .project_grid > .project_grid_content{
 	position:absolute;
 	left:2vw;
-	top:-20vw;
+	top:-12vw;
 	opacity: 0;
+	transition: all .5s;
 }
 
 a.project_grid_link > .project_grid > .project_grid_content > .project_grid_name{
 	position:absolute;
-	left:-16vw;
+	/*left:-16vw;*/
+	transition: all .5s;
+}
+
+a.project_grid_link:hover > .project_grid {
+	background-size: 20% auto;
 }
 
 a.project_grid_link:hover > .project_grid > .project_grid_content{
@@ -245,7 +294,7 @@ a.project_grid_link:hover > .project_grid > .project_grid_content > .project_gri
 
 
 div .project_grid_title, div .project_grid_name{
-	width:12vw;
+	width:16vw;
 	color:#FFFFFF;
 	background-color: #ff014a;
 	padding:8px;
@@ -256,6 +305,10 @@ div .project_grid_title {
 	font-weight: 700;
 	font-size:1.25em;
 	margin-bottom: 8px
+}
+
+div .title_sm {
+	font-size:1em;
 }
 
 div .project_grid_name {
@@ -271,6 +324,19 @@ div #footer{
 	height:auto;
 }
 
+div .content_note {
+	position:relative;
+	float:right;
+	width:100%;
+	clear:left;
+	margin-top:8vw;
+	padding-top: 1vw;
+	color: #999;
+	border-top: 1px dashed #999;
+	font-size: .75em;
+	letter-spacing: 1px;
+}
+
 /* -------------------------------------------------------------------------------------| PROJECT PAGE */
 
 #project_container {
@@ -282,7 +348,7 @@ div #footer{
 	height:auto;
 	padding: 2vw 2.5vw;
 	margin: 0 auto;
-	overflow: auto;
+	overflow: hidden;
 	background-color: #FFFFFF;
 }
 
@@ -330,12 +396,27 @@ div #footer{
 	height:auto;
 	background-color: #ffff01;
 	padding:2vw;
+	z-index:999;
 }
+
+
 
 .student_info_field {
 	width:16vw;
 	height:auto;
 	margin-bottom: 1vw;
+}
+
+.student_info_field strong{
+	color:#000;
+}
+
+.student_info_field_title {
+	font-size: 1.5em;
+	background-color: #000;
+	color:#FFF;
+	padding:4px 6px 6px 6px;
+	font-weight: 700;
 }
 
 .student_info_field a {
@@ -352,7 +433,7 @@ div #footer{
 
 #project_content {
 	position:relative;
-	float: left;
+	float: right;
 	width:55vw;
 	height:auto;
 	/*background-color: #0f0;*/
@@ -412,35 +493,111 @@ img.alignright{
 
 
 /* -------------------------------------------------------------------------------------| CATEGORY PAGE */
+
 div .category_title {
-	padding:20px;
-	color:#07fdb4;
-	margin: 0 auto 1vw auto;
+	width:96vw;
+	margin:2vw 1vw;
+	color:#999;
 	text-align: left;
-	border-bottom: 4px dotted #ffff01;
-}
-
-
-div .category_title_label{
-	font-family: fresno, sans-serif;
 	font-weight: 400;
-	font-style: normal;
-	font-size: 3vw;
-	letter-spacing: 2px;
+	clear:left;
 }
 
+div .category_name {
+	padding: 2px 5px 3px 5px;
+	background-color: #ff014a;
+	font-weight: 700;
+	color:#fff;
+}
+
+
+div .category_project_link {
+
+}
+
+
+
+div .category_project{
+	position: relative;
+	float:left;
+	width:31vw;
+	height:24vw; /* golden ratio of 49 */
+	background-color: #ffff01;
+	margin:1vw;
+	background-size: auto 150%;
+	background-position: center;
+}
+
+
+
+div .category_project_header{
+	min-height:7vw;
+	padding: 2vw;
+	overflow: hidden;
+	background-size: 2vw 2vw;
+	background-position: center;
+	border-bottom: 4px solid #000;
+}
+
+a:hover .category_project{
+	background-size: auto 20%;
+}
+a:hover .category_project_header {
+	background-size: 6vw 6vw;
+}
+
+a:hover .category_project_header .category_project_title,
+a:hover .category_project_header .project_category_student_name
+ {
+	background-color: #ff014a;
+}
+
+div .category_project_title {
+	position: relative;
+	padding: 4px 6px 6px 6px;
+	background-color: #000;
+	margin-bottom: 1vw;
+	color:#fff;
+
+	font-weight: 700;
+	font-size:1.25em;
+}
+
+div .project_category_student_name {
+	position: relative;
+	float:left;
+	padding: 4px 6px 6px 6px;
+	background-color: #000;
+	color:#fff;
+
+	font-weight: 400;
+	font-size:1em;
+	width:auto;
+}
+
+
+div .project_category_description {
+	padding: 1vw;
+	font-weight: 400;
+	font-size: .8em;
+	background-color: #FFF;
+	color:#000; 
+	font-size: 1em;
+	margin: 2vw;
+}
 
 
 /* -------------------------------------------------------------------------------------| Webinar PAGE */
 table #webinar_schedule{
 	font-family: 'Source Sans Pro', sans-serif;
 	width:80vw;
+	color:#000;
 }
 
 td {
 	vertical-align: top;
 	letter-spacing: 1px;
-	line-height: 145%;
+	line-height: 125%;
 }
 
 td {
@@ -455,7 +612,7 @@ tr {
 
 /* day */
 tr.xl68 {
-	background-color: #ff014a;
+	background-color: #000;
 	font-weight:700;
 	font-size: 1.5em;
 	color:#FFFFFF;
@@ -464,7 +621,8 @@ tr.xl68 {
 
 /* panel-row */
 tr.xl70 {
-	background-color: #ffff01;
+	background-color: #ff014a;
+	color: #FFFFFF;
 	background-image: url('imgs/diag_w2-flip.png');
 }
 
@@ -473,7 +631,7 @@ tr.xl70 {
 td.xl69 {
 	font-weight:700;
 	font-size: 1.5em;
-	color:#ff014a;
+	color:#FFFFFF;
 }
 
 td.xl65 {

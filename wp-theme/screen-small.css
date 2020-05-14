@@ -1,0 +1,87 @@
+
+div	.header_link_txt {
+	font-size:1.25em;
+	padding-top:2vw;
+	line-height: 90%;
+}
+
+div.nav_cat{
+	position: relative;
+	float:left;
+	width:50vw;
+	height:8vw;
+	padding-top:1.5vw;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+
+}
+
+/* ---------------------------------------------------------------------------    HOMEPAGE */
+
+div .project_grid {
+	width:49vw; /*(80/4)*/
+	height:50vw;
+}
+
+div .project_grid_title, div .project_grid_name{
+	width:45vw;
+	padding:8px;
+	/*border-bottom:4px solid #ffff01;*/
+}
+
+div .project_grid_title {
+	font-size:2em;
+	margin-bottom: 8px;
+}
+
+div .title_sm {
+	font-size:1em;
+}
+
+div .project_grid_name {
+	font-size:1em;
+}
+
+/* ---------------------------------------------------------------------------    NO HOVER */
+
+a.project_grid_link > .project_grid > .project_grid_content{
+	position:absolute;
+	left:2vw;
+	top:2vw;
+	opacity: 1;
+}
+
+a.project_grid_link > .project_grid > .project_grid_content > .project_grid_name{
+	position:absolute;
+	left:0vw;
+}
+
+a.project_grid_link:hover > .project_grid > .project_grid_content{
+	
+}
+
+a.project_grid_link:hover > .project_grid > .project_grid_content > .project_grid_name{
+	
+}
+
+
+
+/* ---------------------------------------------------------------------------    category page */
+
+div .category_project{
+	width:95vw;
+	height:40vw; 
+	margin-bottom:6vw;
+	border:2px solid #000;
+}
+
+div .category_project_header{
+	border-top: 10px solid #000;
+	border-bottom: 10px solid #000;
+}
+
+div .category_project_title {
+
+	font-size:2em;
+}

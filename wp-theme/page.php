@@ -10,10 +10,9 @@
 <div id="main_container">
    
         <h1><?php the_title(); ?></h1>
-
             <div id="page_content">  
-                        <?php the_content(); ?>    
-                        </div>       <!-- project_content -->             
+                <?php the_content(); ?>    
+            </div>       <!-- project_content -->             
                         <?php 
                         //
                     } // end while

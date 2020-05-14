@@ -1,0 +1,43 @@
+
+/* ---------------------------------------------------------------------------    HEADER */
+
+div	.header_link_txt {
+	/*font-size:1em;*/
+	padding-top:2vw;
+	line-height: 90%;
+}
+
+
+/* ---------------------------------------------------------------------------    HOMEPAGE */
+
+div .project_grid {
+	width:20vw; /*(80/4)*/
+	height:20vw;
+}
+
+div .project_grid_title, div .project_grid_name{
+	width:16vw;
+	padding:8px;
+	/*border-bottom:4px solid #ffff01;*/
+}
+
+div .project_grid_title {
+	font-size:1em;
+	margin-bottom: 8px;
+}
+
+div .title_sm {
+	font-size:1em;
+}
+
+div .project_grid_name {
+	font-size:1em;
+}
+
+
+/* ---------------------------------------------------------------------------    category page */
+
+div .category_project{
+	width:47vw;
+	height:29vw; 
+}

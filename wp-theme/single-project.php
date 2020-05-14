@@ -33,7 +33,8 @@
                         
                     </div> <!-- project_hero -->
 
-                    <div id="student_info">
+                    <div id="student_info" class="sticky_info">
+                        <div class="student_info_field student_info_field_title"><?php the_title(); ?></div>
                         <div class="student_info_field">by <strong><?php the_field('student_name'); ?></strong></div>
                         <div class="student_info_field"><a href="<?php the_field('portfolio_website_link'); ?>" target="_blank">Portfolio Website</a></div>
 
@@ -96,6 +97,8 @@
 
                             background: url('<?php echo $img_bg; ?>');
                             background-size:10vw 10vw;
+                            background-position: right center;
+                            background-attachment: fixed;
                         }
                     </style>
 
@@ -103,6 +106,8 @@
             
         
                     </div> <!-- single_project_main -->
+
+                    <div class="content_note"><?php the_field('student_name'); ?> was repsonsible for posting the content on this page. Any inqueries should be directed to the contact information listed above. </div>
 
 
 </div><!-- project_container -->

@@ -8,19 +8,24 @@
 	</div> <!-- feature -->
 
 	<div id="full_grid" > 
+		<?php $category = get_queried_object();?>
 		
-		<!-- <h2>All Capstone Projects</h2> -->
+		<div class="category_title">
+			All Capstone Projects Filed Under 
+			<div class="category_title_label"><?php echo $category->name;?></div>
+		</div>
+			
+			
+			
 
 
-		
 					<?php 
 					/* =======================
 					PROJECTS
 					==========================*/
 
 					
-					$bg_coin = true;
-					$args = array( 'post_type' => 'project', 'posts_per_page' => 100, 'orderby'   =>'rand' );
+					$args = array( 'post_type' => 'project', 'cat'=> $category->term_id,'posts_per_page' => 100 );
 					$loop = new WP_Query( $args );
 						if ( $loop->have_posts() ) :
 							while ( $loop->have_posts() ) : 
@@ -31,7 +36,7 @@
 							<?php 
 	                            $img_bg_array = get_field('branding_tile_b_w');
 	                            $img_bg = $img_bg_array["sizes"]["medium"];
-	                            //print_r($img_bg)
+	                          
 	                         ?>
 
 							<a class="project_grid_link" href="<?php echo get_permalink(); ?>">
@@ -39,10 +44,12 @@
 									<div class="project_grid_content">
 										<div class="project_grid_title <?php if(strlen(get_the_title()) > 46){ echo "title_sm"; } ?>"><?php the_title(); ?></div>
 										<div class="project_grid_name">By <?php the_field('student_name'); ?></div>		
-									</div>
+									</div><!-- project_grid_content -->	
 								</div>
 							</a>
 
+
+						
 						
 
 
@@ -53,7 +60,7 @@
 						endif;//} // end if
 						
 					?>
-		
+			
 		
 	</div> <!-- main_grid -->
 
