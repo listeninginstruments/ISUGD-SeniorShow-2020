@@ -12,6 +12,9 @@
                     <!-- CAPSTONE TITLE -->
                     <div id="project_title">
                         <?php the_title(); ?>
+                        <script>
+                            document.title = "<?php the_title(); ?>";
+                        </script>
                     </div>
 
                     <div id="project_byline">
@@ -50,9 +53,9 @@
                         <?php if (get_field('twitter_handle')): ?> 
                             <div class="student_info_field">Twitter:<br><a href="https://twitter.com/<?php echo get_field('twitter_handle'); ?>" target="_blank">@<?php echo get_field('twitter_handle'); ?></a></div>
                         <?php endif; ?>
-                        <br><br>
+                        
                         <strong><u>Filed Under:</u></strong><br>
-                        <br><br>
+                        
                         <?php
                             $categories = get_the_category( $post->ID );
 

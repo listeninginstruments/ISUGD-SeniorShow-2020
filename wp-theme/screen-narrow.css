@@ -11,8 +11,8 @@ div	.header_link_txt {
 /* ---------------------------------------------------------------------------    HOMEPAGE */
 
 div .project_grid {
-	width:20vw; /*(80/4)*/
-	height:20vw;
+	width:19.7vw; /*(80/4)*/
+	height:19.7vw;
 }
 
 div .project_grid_title, div .project_grid_name{
@@ -34,10 +34,77 @@ div .project_grid_name {
 	font-size:1em;
 }
 
+/* -------------------------------------------------------------------------------------| Homepage Featured Projects */
+
+div .feature_project{
+	width:49.25vw;
+}
+
+
+
+/* -------------------------------------------------------------------------------------| PROJECT PAGE */
+
+#project_container {
+	left:0;
+	width:100%;
+	margin: 0;
+
+}
+
+
+
+
+
+#project_title {
+
+}
+
+
+
+
+#student_info {
+	left:0px;
+	width:100%;
+
+}
+
+
+
+.student_info_field {
+	width:70vw;
+	margin-bottom: 10px;
+}
+
+.student_info_field strong{
+	color:#000;
+}
+
+
+
+
+
+
+#project_content {
+	float: left;
+	width:100%;
+}
+
+
+
+
 
 /* ---------------------------------------------------------------------------    category page */
 
 div .category_project{
 	width:47vw;
 	height:29vw; 
+}
+
+/* ---------------------------------------------------------------------------    About All page */
+
+div .about_student_info_field{
+	position:relative;
+	float:left;
+	width:95vw;
+	padding-top:10px;
 }

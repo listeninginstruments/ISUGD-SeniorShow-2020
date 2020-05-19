@@ -24,7 +24,7 @@
 					==========================*/
 
 					
-					$args = array( 'post_type' => 'project', 'cat'=> $category->term_id,'posts_per_page' => 100 );
+					$args = array( 'post_type' => 'project', 'cat'=> $category->term_id,'posts_per_page' => 100, 'orderby'=>'rand' );
 					$loop = new WP_Query( $args );
 						if ( $loop->have_posts() ) :
 							while ( $loop->have_posts() ) : 
@@ -35,25 +35,21 @@
 							<?php 
 	                            $img_bg_array = get_field('branding_tile_b_w');
 	                            $img_bg = $img_bg_array["sizes"]["medium"];
+	                            
 
+	                            $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'medium');
+								if( !$featured_img_url){
+									$feat_img_bg = get_template_directory_uri() . "/imgs/diag_w2-flip.png";
+								} else {
+									$feat_img_bg = $featured_img_url;
+								}
 	                         ?>
-
-	                         <!--
-							<a class="project_grid_link" href="<?php echo get_permalink(); ?>">
-								<div class="project_grid" style="background-image:url(<?php echo $img_bg; ?>);">
-									<div class="project_grid_content">
-										<div class="project_grid_title <?php if(strlen(get_the_title()) > 46){ echo "title_sm"; } ?>"><?php the_title(); ?></div>
-										<div class="project_grid_name">By <?php the_field('student_name'); ?></div>		
-									</div>
-								</div>
-							</a>
-							-->
 
 
 
 							<a class="category_project_link" href="<?php echo get_permalink(); ?>"> 
 								
-								<div class="category_project" style="background-image:url(<?php the_post_thumbnail_url("large"); ?>);">
+								<div class="category_project" style="background-image:url(<?php echo $feat_img_bg; ?>);">
 
 									<div class="category_project_header" style="background-image:url(<?php echo $img_bg; ?>);">
 										<div class="category_project_title">

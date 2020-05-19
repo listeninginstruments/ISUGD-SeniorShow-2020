@@ -116,6 +116,7 @@
 			<a href="#" id="topic_link"><div class="header_link header_link_txt">CAPSTONE TOPICS</div></a>
 			<a href="http://isugd.com/2020seniorshow/virtual-frontier/panels/"><div class="header_link header_link_txt">THE LIVE WEBINAR</div></a>
 			<a href="http://isugd.com/2020seniorshow/about/"><div class="header_link header_link_txt">ABOUT FRONTIER</div></a>
+			<a href="http://isugd.com/2020seniorshow/about/all"><div class="header_link header_link_txt">LIST ALL</div></a>
 
 			<div id="topics_nav">
 				<?php

@@ -242,9 +242,9 @@ a.link-hero:hover{
 div #main_container{
 	position:absolute;
 	left:0vw;
-	top:9vw;					/* -------------------------------------------------------------------------------------| Change when opening nav | */
+	top:9vw;		/* ------------------------------------------------------------------------------| Change when opening nav | */
 
-	width:100vw;
+	width:98.5vw;
 	height:auto;
 	margin: 0 auto;
 	/*overflow: auto;*/
@@ -254,26 +254,36 @@ div #main_container{
 div .project_grid {
 	position: relative;
 	float:left;
-	width:20vw; /*(80/5)*/
-	height:20vw;
+	width:16.41vw; 
+	height:16.41vw;
 	background-size: 100% auto;
 	background-position: center;
 	border:2px solid #FFF;
 	overflow:hidden;
 }
 
+
 a.project_grid_link > .project_grid > .project_grid_content{
 	position:absolute;
 	left:2vw;
-	top:-12vw;
-	opacity: 0;
+	top:-16vw;
 	transition: all .5s;
 }
 
-a.project_grid_link > .project_grid > .project_grid_content > .project_grid_name{
-	position:absolute;
+a.project_grid_link > .project_grid > .project_grid_content > .project_grid_title{
+	position:relative;
+	float:left;
 	/*left:-16vw;*/
 	transition: all .5s;
+
+}
+
+a.project_grid_link > .project_grid > .project_grid_content > .project_grid_name{
+	position:relative;
+	float:left;
+	/*left:-16vw;*/
+	transition: all .5s;
+	clear:left;
 }
 
 a.project_grid_link:hover > .project_grid {
@@ -283,28 +293,28 @@ a.project_grid_link:hover > .project_grid {
 a.project_grid_link:hover > .project_grid > .project_grid_content{
 	left:2vw;
 	top:2vw;
-	opacity: 1;
 }
 
 a.project_grid_link:hover > .project_grid > .project_grid_content > .project_grid_name{
-	left:0vw;
+
 }
 
 
 
 
 div .project_grid_title, div .project_grid_name{
-	width:16vw;
+	width:12vw;
 	color:#FFFFFF;
 	background-color: #ff014a;
 	padding:8px;
 	/*border-bottom:4px solid #ffff01;*/
+	overflow:hidden;
+	margin-bottom: 8px;
 }
 
 div .project_grid_title {
 	font-weight: 700;
 	font-size:1.25em;
-	margin-bottom: 8px
 }
 
 div .title_sm {
@@ -315,6 +325,62 @@ div .project_grid_name {
 	font-weight: 400;
 	font-size:1em;
 }
+
+
+/* -------------------------------------------------------------------------------------| Homepage Featured Projects */
+
+div .feature_project{
+	width:49.25vw;
+	background-color: #ffff01;
+	/*border:1px solid #999;*/
+}
+
+/* little red random text box */
+div .random_student_feature{
+	float:left;
+	color:#FFF;
+	width:auto;
+	overflow: hidden;
+	font-weight:500;
+	background-color: #ff014a;
+	padding: 4px 6px 6px 6px;
+	margin-left: 2vw;
+	font-size: .75em;
+	letter-spacing: 1px;
+}
+
+
+a.project_grid_link > .feature_project > .project_grid_content {
+	top:3vw !important;
+	width:auto;
+	max-width: 35vw;
+}
+
+div .feature_project > .project_grid_content > .project_grid_title {
+	width:auto !important;
+	max-width: 35vw;
+}
+
+
+div .feature_project > .project_grid_content > .project_grid_name {
+	width:auto !important;
+	max-width: 35vw;
+}
+
+div .feature_description{
+	position:relative;
+	float:left;
+	clear:left;
+	max-width: 35vw;
+	background-color: #FFF;
+	color:#000;
+	font-weight: 400;
+	line-height: 130%;
+	letter-spacing: 1px;
+	padding: 4px 6px 6px 6px;
+	font-size: .65em;
+}
+
 
 
 /* -------------------------------------------------------------------------------------| Footer */
@@ -520,7 +586,7 @@ div .category_project_link {
 div .category_project{
 	position: relative;
 	float:left;
-	width:31vw;
+	width:30.7vw;
 	height:24vw; /* golden ratio of 49 */
 	background-color: #ffff01;
 	margin:1vw;
@@ -653,4 +719,39 @@ td.xl65 {
 
 
 
+/* -------------------------------------------------------------------------------------| About PAGE */
+
+div .about_student {
+	position:relative;
+	float:left;
+	width:90vw;
+	height:auto;
+	margin-bottom:4vw;
+}
+
+div .about_student a:hover{
+	background-color: #ff014a;
+	color:#fff;
+	padding:0px 6px 4px 6px;
+}
+
+div .about_student_name{
+	font-weight: 700;
+	font-size: 1.5em;
+	/*background-color: #ff014a;*/
+	color:#000;
+	border-bottom: 6px solid #ff014a;
+	
+}
+
+div .about_student_project_link{
+	padding-top:10px;
+}
+
+div .about_student_info_field{
+	position:relative;
+	float:left;
+	width:23vw;
+	padding-top:10px;
+}
 

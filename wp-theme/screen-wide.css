@@ -11,8 +11,8 @@ body{
 
 div .project_grid {
 	float:left;
-	width:12.5vw; /*(80/6)*/
-	height:12.5vw;
+	width:12.25vw; /*(98/8)*/
+	height:12.25vw;
 }
 
 div .project_grid_title, div .project_grid_name{
@@ -38,6 +38,30 @@ div .project_grid_name {
 	font-size:1em;
 }
 
+/* -------------------------------------------------------------------------------------| Homepage Featured Projects */
+
+div .feature_project{
+	width:24.5vw;
+	background-color: #ffff01;
+	/*border:1px solid #999;*/
+}
+
+a.project_grid_link > .feature_project > .project_grid_content {
+	top:2vw !important;
+	width:auto;
+	max-width: 20vw;
+}
+
+div .feature_project > .project_grid_content > .project_grid_title {
+	width:auto !important;
+	max-width: 20vw;
+}
+
+
+div .feature_project > .project_grid_content > .project_grid_name {
+	width:auto !important;
+	max-width: 20vw;
+}
 
 
 /* ---------------------------------------------------------------------------    category page */
@@ -45,7 +69,7 @@ div .project_grid_name {
 div .category_project{
 	position: relative;
 	float:left;
-	width:18vw;
+	width:17.7vw;
 	height:27vw; /* golden ratio of 49 */
 	background-color: #ffff01;
 	margin:1vw;

@@ -31,16 +31,16 @@ div .project_grid_title, div .project_grid_name{
 }
 
 div .project_grid_title {
-	font-size:2em;
+	font-size:2.25em;
 	margin-bottom: 8px;
 }
 
 div .title_sm {
-	font-size:1em;
+	font-size:1.25em;
 }
 
 div .project_grid_name {
-	font-size:1em;
+	font-size:1.5em;
 }
 
 /* ---------------------------------------------------------------------------    NO HOVER */
@@ -52,18 +52,43 @@ a.project_grid_link > .project_grid > .project_grid_content{
 	opacity: 1;
 }
 
-a.project_grid_link > .project_grid > .project_grid_content > .project_grid_name{
-	position:absolute;
-	left:0vw;
-}
-
-a.project_grid_link:hover > .project_grid > .project_grid_content{
-	
-}
 
 a.project_grid_link:hover > .project_grid > .project_grid_content > .project_grid_name{
 	
 }
+
+
+/* -------------------------------------------------------------------------------------| Homepage Featured Projects */
+
+div .feature_project{
+	width:98.5vw;
+	height:30vw;
+}
+
+/* little red random text box */
+div .random_student_feature{
+	font-size:1em;
+}
+
+a.project_grid_link > .feature_project > .project_grid_content > .project_grid_title{
+	max-width: 70vw;
+}
+
+a.project_grid_link > .feature_project > .project_grid_content > .project_grid_name{
+	max-width: 70vw;
+}
+
+a.project_grid_link > .feature_project > .project_grid_content {
+	top:5vw !important;
+	width:auto;
+	max-width: 70vw;
+}
+
+div .feature_description{
+	max-width: 70vw;
+	font-size: 1em;
+}
+
 
 
 
@@ -85,3 +110,14 @@ div .category_project_title {
 
 	font-size:2em;
 }
+
+
+/* ---------------------------------------------------------------------------    About All page */
+
+div .about_student_info_field{
+	position:relative;
+	float:left;
+	width:95vw;
+	padding-top:10px;
+}
+
